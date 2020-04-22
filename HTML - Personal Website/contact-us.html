@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Yash Wadhwani</title>
+  </head>
+  <body>
+    <h1>Hey Welcome to contact us page</h1>
+    <p style="font-size: 20px;">
+      You can contact me on my email : yashw245@gmail.com
+    </p>
+    <p style="font-size: 20px;">
+      Or walk into address  : Madhav Sankalp, Kalyan West
+    </p>
+    <hr size="2" noshade="0">
+    <!-- mailto action will open the mail client in your machine -->
+    <!-- enctype specifies the type the input has to be encoded -->
+    <form  action="mailto:yashw245@gmail.com" method="post" enctype="text/plain">
+      <table cellspacing="10px">
+        <tr>
+          <td>Your Name : </td>
+          <td><input type="text" name="username" value="" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+          <td><label for="useremail">Your email : </label></td>
+          <td><input type="email" name="useremail" placeholder="Enter your email"><br></td>
+        </tr>
+      <tr>
+        <td><label for="useremsg">Your message : </label></td>
+        <td><textarea name="usermsg" rows="10" cols="50" placeholder="Enter Your Message"></textarea><br></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="usersubmit" value="Submit"></td>
+      </tr>
+      </table>
+    </form>
+  </body>
+</html>

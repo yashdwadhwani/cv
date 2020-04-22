@@ -1,0 +1,262 @@
+<!-- This document is made by Yash Wadhwani do not remove This
+i have made this as i was learning so you may find tags not in a proper order.
+you can search the document for any tag you want this is for my personal Reference
+But you can use it to understand if you dont want to use google
+Futher information on tags at devdocs.io -->
+
+
+<!-- Tags that require a closing tag -->
+<!-- 1. Heading Tags
+  Heading tags start from 1 and end at 6 after 6 there is no change in the text
+ -->
+ <center>
+<h1>This is a level 1 heading</h1>
+<h2>This is level 2 heading</h2>
+<h3>This is level 3 heading</h3>
+<h4>This is level 4 heading</h4>
+<h5>This is level 5 heading</h5>
+<h6>This is level 6 heading</h6>
+</center>
+<hr>
+<!-- 2. center tag: obsolete tag
+used above to Heading tags -->
+<!-- 3. Title tag : defines the document's title that is shown in the browser title or page tab  -->
+<title>This is a Reference page</title>
+<!-- 4. p tag : paragrapgh tag.
+ -->
+ <hr>
+ <p>
+   Hello this is a paragrapgh
+ </p>
+ <hr>
+ <!-- 5. i tag: this wil italise the text enclosed in the tag -->
+ <i>I am italic</i> <br />
+ <!-- 6. em tag : emphasis tag , this will also italise the text but this will force browser to intend forward mostly preffered used -->
+ <em>I am emphasied</em><br />
+ <!-- 7. strong tag : this will also bold the text but this will force browser to make the text look differnet, mostly preffered used-->
+ <strong>I am strong</strong><br>
+ <!-- 8. b tag : bold tag, this will style the text to be bold -->
+ <b>I am bold</b><br>
+ <!-- 9. ul tag : Unordered List , renders as bulleted list
+    li tag:  is used to put value for the content in the list
+   -->
+   <hr>
+   <p>
+     Unordered Lists:
+   <ul>
+     <li>This</li>
+     <li>is</li>
+     <li>Unordered</li>
+     <li>List</li>
+     <li>without</li>
+     <li>list-style-type css property</li>
+   </ul>
+   Used style="list-style-type:circle;" with Unordered Lists
+ <ul style="list-style-type:circle;">
+   <li>This</li>
+   <li>is</li>
+   <li>Unordered</li>
+   <li>List</li>
+   <li>with</li>
+   <li>list-style-type css property</li>
+ </ul>
+   </p>
+   <!-- 10. ol tag : Ordered List , renders as numbered list
+      li tag:  is used to put value for the content in the list
+     -->
+     <p>
+       Ordered Lists:
+     <ol>
+       <li>This</li>
+       <li>is</li>
+       <li>Unordered</li>
+       <li>List</li>
+       <li>without</li>
+       <li>list-style-type css property</li>
+     </ol>
+     Used style="list-style-type:upper-roman;" with Ordered Lists
+   <ol style="list-style-type:upper-roman;">
+     <li>This</li>
+     <li>is</li>
+     <li>Unordered</li>
+     <li>List</li>
+     <li>with</li>
+     <li>list-style-type css property</li>
+   </ol>
+     </p>
+
+<!-- 11. a tag: anchor tag, this will hyperlink the text and make it redirect to the page mentioned in href* attribute
+You can mention both internal or external links to the href attribute.
+-->
+<hr>
+<h3>
+  Anchor tag :
+</h3>
+<a href="https://www.google.com">If you click here you will be redirected to Google! as external link</a> <br><br>
+<a href="HTML - Personal Website/index.html">You will be redirected to index page of my first web project as internal link</a> <br>
+
+<!-- 12. table tag : Used to create a table on your page attributes are depricated
+          a. thead tag : header of the table
+              th tag: table header cell used to give header values to the table is always bold
+          b. tfoot tag : footer of the table
+          c. tbody tag : body/content of the <table>
+              a. tr tag : table row tag used to create a horizontal row. this is important to create td tags ie table data tag to insert values
+              b td tag : table cell tag, here is where we insert our table values.
+      Tables can be nested according to the need.
+          </table>
+      -->
+<hr>
+<h3>
+  Table Tag :
+</h3>
+<!-- I have used table attribute because of pure html styling these are not a good practice this was until I reach CSS tutorial -->
+<table border="1px" cellspacing="10px">
+  <thead>
+    <tr>
+      <th colspan="2">
+        I am the head section of the table
+    </th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="2">
+        I am the footer section of the table
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>
+        Hey
+      </td>
+      <td>
+        there
+      </td>
+    </tr>
+    <tr>
+      <td>
+        I am
+      </td>
+      <td>
+        table body
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3>Form Tag, input tag</h3>
+<!--
+13 Form tag : It is used to create forms on your page.
+Attributes:
+  a. action: The URI of a program that processes the form information
+  b. method: the HTTP method that the browser uses to submit the form.
+Tags used to create a form:
+a. Label tag: represents a caption for an item in a user interface
+b. input tag:is used to creative interactive controls for web-based forms in order to accept data from the user.
+  input type: 1. button.
+              2. checkbox.
+              3. color.
+              4. date.
+              5. datetime-local.
+              6. email.
+              7. file.
+              8. hidden.
+              9. image.
+              10. month
+              11. number.
+              12. password.
+              13. radio.
+              14. range.
+              15.reset.
+              16. reset.
+              17. submit.
+              18. tel.
+              19. text.
+              20. time.
+              21. url.
+              22. week.
+c. textarea tag: This is used to create a large input box either to type a message or feedback.
+  Attributes of form tag:
+  1. autocomplete
+  2. autofocus.
+  3. disabled.
+  4. form: id of the form for which this input tag is related to.
+  5. List.
+  6. name: * identifier.
+  7. required
+  8. tabindex.
+  9. type: * string indicating which type will the element represent.
+  10. value
+  # in action does no  action
+ -->
+ <form  action="#" method="post">
+   <label ><h3>This is a form and i have used a label here</h3></label>
+   Lets test the input type text here: <input type="text" name="userinput" placeholder="This is an input box"><br><br>
+   Lets test the input type button here: <input type="button" name="usertbutton" value="This is a button"><br><br>
+   Lets test the input type checkbox here: <input type="checkbox" name="usercheck"><br><br>
+   Lets test the input type color here: <input type="color" name="usercolor"><br><br>
+   Lets test the input type date here: <input type="date" name="userdate" ><br><br>
+   Lets test the input type datetime-local here: <input type="datetime-local" name="userdatetime-local"><br><br>
+   Lets test the input type email here for validation you need to either use attribute pattern for a specific pattern or use RegEx(Regular Expression): <input type="email" name="useremail" placeholder="This is an email box"><br><br>
+   Lets test the input type file here: <input type="file" name="userfile" ><br><br>
+   Lets test the input type hidden here: <input type="hidden" name="userhidden"><br><br>
+   Lets test the input type image here: <input type="image" name="userimage" src="HTML - Personal Website/images/profile.jpg" width="50px"><br><br>
+   Lets test the input type month here: <input type="month" name="usermonth"><br><br>
+   Lets test the input type number here to remove the arrow keys you can use js: <input type="number" name="usernumber" placeholder="This is an number input box"><br><br>
+   Lets test the input type password here: <input type="password" name="userinput" placeholder="This is an password box"><br><br>
+   Lets test the input type radio here: <input type="radio" name="userradio"><br><br>
+   Lets test the input type range here: <input type="range" name="userrange"><br><br>
+   Lets test the input type reset here: <input type="reset" name="userreset" value="This is an reset button"><br><br>
+   Lets test the input type submit here: <input type="submit" name="usersubmit" value="This is an submit button"><br><br>
+   Lets test the input type tel here and to validate it according to your country use pattern and input proper RegEx: <input type="tel" name="usertel" placeholder="This is an telephone number box"><br><br>
+   Lets test the input type time here: <input type="time" name="usertime"><br><br>
+   Lets test the input type url here and to validate use pattern: <input type="url" name="userurl" placeholder="This is an url box"><br><br>
+   Lets test the input type week here: <input type="week" name="userweek"><br><br>
+   Lets test the textarea tag: <textarea name="usertextarea" rows="10" cols="50"></textarea>
+ </form>
+<h3>End of Form</h3>
+<hr size="3" noshade>
+
+
+<!-- self closing tag -->
+<!-- 1. meta tag : Provides meta data or associated along with standard encoding.
+Attributes :
+1. charset : this Attribute declares the page's character encoding. Mostly used "utf-8"
+2. content : this contains the value for http-equiv or name Attribute, depending on what is used.
+3. http-equiv : defines a pragma directive.It is named so because all the allowed attribute are names of particular HTTP header
+  a. content-language : obsolete* : use html attribute lang instead/
+  b. content-security-policy : allows page author to define a content policy for the page it is used in.
+  c. content-type : Defines the MIME type of the document,followed by it's character encoding. default used charset=IANAcahrset.
+  d.refresh : it does two things
+            1. reload the page if content has a positive integer.
+            2. redirects to another page if content contains a string followed after positive integer ;url="" .
+  e. set cookie : obsolete* defines cookie for a page. use HTTP-header Set-Cookie.
+4. name : his attribute defines the name of a piece of document-level metadata. It should not be set if one of the attributes itemprop, http-equiv or charset is also set.
+for more google "mdn".
+
+-->
+<meta charset="utf-8"  />
+
+
+<!-- 1. Linebreak: this will force the browser to move to a new line -->
+Used without break.
+Used before break.
+<br />
+Used after break!
+
+<!-- 2. Horizontal Line: this will create a horizontal line on the page
+Attributes: size, noshade, color, width, align.
+ -->
+<hr size="3" noshade />
+After Horizontal Linebreak <br>
+
+<!-- img tag: Image tag this will add image to your desired page
+  Compulsory attribute : 1. src: source of your image file (it could be either from the web or local directory)
+  2. Alt-text : if your image does not support any browser then alt text will be the alternative stating what the image is here.
+  Additional attribute : height and width, to specify the height and width of your image.
+   -->
+   Internal Path for the image <br>
+<img src="HTML - Personal Website\images\profile.jpg" alt="Demo using internal directory" width="100px"><br>
+  Facebook link for the image <br>
+<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/49239545_100687791018868_184586046430773248_n.jpg?_nc_cat=102&_nc_sid=7aed08&_nc_ohc=kJAQ59n--dMAX90E5Uy&_nc_ht=scontent-bom1-1.xx&oh=191603cfb1a515dc7394df4484f97b3f&oe=5EC63ACC" alt="Demo using external directory" width="100px"><br>
